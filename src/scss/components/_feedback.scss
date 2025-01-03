@@ -1,0 +1,128 @@
+.feedback {
+
+  &__external {
+    @include tablet {
+      background-size: 85% 90%;
+    }
+
+    @include tablet880 {
+      background-size: 90% 90%;
+    }
+
+    @include small-tablet {
+      background: none;
+    }
+
+    @include mobile {
+      background-size: 95% 70%;
+    }
+
+    background: left bottom / contain no-repeat url('/img/feedback/bg.png');
+    background-size: 80% 90%;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    @include small-tablet {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      padding: 0 15px;
+      height: 370px;
+      border-radius: 20px;
+      background: none;
+      background-color: #F5D6B7;
+    }
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    padding: 0 78px 117px;
+
+    height: 545px;
+
+    background-origin: border-box;
+    background: center / contain no-repeat url('/img/feedback/bubble.png');
+  }
+
+  &__text {
+    @include small-tablet {
+      width: 100%;
+    }
+
+    @include mobile {
+      font-size: 16px;
+    }
+
+    position: relative;
+    margin-bottom: 20px;
+    max-width: 498px;
+    font-size: 26px;
+    text-align: center;
+    color: var(--bg-color);
+  }
+
+  &__quotes {
+    &-up {
+      @include small-tablet {
+        display: none;
+      }
+
+      position: absolute;
+      top: 0;
+      left: 50px;
+    }
+
+    &-down {
+      @include small-tablet {
+        display: none;
+      }
+
+      position: absolute;
+      bottom: 165px;
+      right: 80px;
+    }
+  }
+
+  &__arrow {
+    @include small-tablet {
+      top: 85%;
+    }
+
+    color: var(--main-color-1);
+
+    &-prev {
+      @include small-tablet {
+        left: 40%;
+      }
+
+      @include mobile {
+        left: 25%;
+      }
+    }
+
+    &-next {
+      @include small-tablet {
+        right: 40%;
+      }
+
+      @include mobile {
+        right: 25%;
+      }
+    }
+  }
+}

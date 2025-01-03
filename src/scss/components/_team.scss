@@ -1,0 +1,30 @@
+.team {
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__photo {
+        margin-bottom: 15px;
+    }
+
+    &__position {
+        margin-bottom: 12px;
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    &__experience {
+        font-weight: 900;
+    }
+
+    &__item {
+        text-align: center;
+    }
+}

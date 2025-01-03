@@ -1,0 +1,15 @@
+:root {
+  // base
+  --font-family: "Avenir", sans-serif;
+  --font-second-family: "Rubik Glitch", sans-serif;
+  --content-width: 1240px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --main-color-1: #F9830A;
+  --main-color-2: #4EB6F7;
+  --bg-color: #061116;
+  --gradient-color: linear-gradient(270deg, #4eb6f7 0%, #f9830a 100%);
+}

@@ -1,0 +1,57 @@
+.burger {
+
+  @include tablet {
+    display: block;
+  }
+
+  display: none;
+  position: relative;
+  border: 2px solid var(--main-color-1);
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+
+  &__line {
+    border-radius: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 3px;
+    width: 26px;
+
+    background-color: var(--main-color-1);
+    transform: translateX(-50%) translateY(-50%);
+
+    &:first-child {
+      margin-top: -9px;
+    }
+
+    &:last-child {
+      left: 7px;
+      margin-top: 9px;
+      width: 26px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.burger-close {
+
+  @include tablet {
+    display: block;
+  }
+
+  display: none;
+
+  position: absolute;
+  top: 10px;
+  right: var(--container-offset);
+  border: 2px solid var(--main-color-1);
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  background-image: url("../img/close.svg");
+  background-position: center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}

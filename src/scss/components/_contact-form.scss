@@ -1,0 +1,40 @@
+.contact-form {
+    &__inner {
+      @include small-tablet {
+        padding: 38px 50px 80px;
+      }
+
+      @include mobile {
+        padding: 38px 15px 50px;
+      }
+
+        padding: 38px 107px 80px;
+        border: 1px solid rgba(249, 131, 10, 0.4);
+        border-radius: 40px;
+        background: rgba(6, 17, 22, 0.5);
+    }
+
+    &__title {
+
+      @include mobile {
+        font-size: 25px;
+      }
+
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 53px;
+        text-align: center;
+    }
+
+    &__subtitle {
+      @include mobile {
+        font-size: 20px;
+      }
+
+        margin-bottom: 35px;
+        font-size: 28px;
+        text-align: center;
+    }
+
+
+}

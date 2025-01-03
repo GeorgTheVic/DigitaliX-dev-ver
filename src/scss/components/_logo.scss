@@ -1,0 +1,20 @@
+.logo {
+  @include mobile {
+    font-size: 30px;
+  }
+
+    font-family: var(--font-second-family);
+    font-weight: 400;
+    font-size: 49px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+
+    &__orange {
+        color: var(--main-color-1);
+    }
+
+    &__blue {
+        color: var(--main-color-2);
+    }
+}
