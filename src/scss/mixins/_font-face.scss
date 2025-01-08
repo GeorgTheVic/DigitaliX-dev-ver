@@ -6,8 +6,8 @@
     font-weight: #{$weight};
     font-display: swap;
     font-style: $style;
-    // @each $key, $value in $extras {
-    //   #{$key}: #{$value};
-    // }
+    @each $key, $value in $extras {
+      #{$key}: #{$value};
+    }
   }
 }
