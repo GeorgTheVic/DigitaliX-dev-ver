@@ -1,4 +1,5 @@
-@include font-face("Avenir", "../fonts/AvenirLTRoman", 400, normal, ("ascent-override": "80%"));
+@include font-face("Avenir", "../fonts/AvenirLTRoman", 400, normal);
 @include font-face("Avenir", "../fonts/AvenirLTBlack", 800, black);
 @include font-face("Avenir", "../fonts/AvenirLTBlack", 500, medium);
 @include font-face("Rubik Glitch", "../fonts/RubikGlitchRegular", 400, normal);
+// , ("ascent-override": "80%")
