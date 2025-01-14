@@ -9,20 +9,23 @@
       </p>
       <form action="#" class="form contact-form__form">
         <label class="form__label">
-          <input type="text" name="Имя" class="input-reset form__input input-name" placeholder="Имя">
+          <input type="text" name="Имя" class="input-reset form__input input-name" placeholder="Имя" autofocus="false">
           <input type="tel" name="Номер телефона" class="input-reset form__input input-tel"
             placeholder="Номер телефона">
           <label class="form__subtitle" for="service">Выберите услугу</label>
-          <select class="input-reset form__input" placeholder="Услуга" name="Услуга" id="service">
-            <option value="Создание сайта">Создание сайта</option>
-            <option value="Дизайн">Дизайн</option>
-            <option value="Озвучка">Озвучка</option>
-            <option value="Монтаж">Монтаж</option>
-          </select>
+          <div class="dropdown form__input">
+            <button class="btn-reset dropdown-toggle">Выберите услугу</button>
+            <ul class="list-reset dropdown-menu" placeholder="Услуга" name="Услуга" id="service">
+              <li value="Создание сайта">Создание сайта</li>
+              <li value="Дизайн">Дизайн</li>
+              <li value="Озвучка">Озвучка</li>
+              <li value="Монтаж">Монтаж</li>
+            </ul>
+          </div>
           <div class="form__inner">
             <input type="checkbox" id="contact-form__checkbox" class="form__checkbox" name="checkbox" />
-            <label for="contact-form__checkbox" class="form__text">Я ознакомился с <a href="Privacy_Policy_Digitalix.docx"
-                download="Privacy Policy Digitalix" class="form__link">Политикой
+            <label for="contact-form__checkbox" class="form__text">Я ознакомился с <a
+                href="Privacy_Policy_Digitalix.docx" download="Privacy Policy Digitalix" class="form__link">Политикой
                 конфиденциальности</a></label>
           </div>
         </label>

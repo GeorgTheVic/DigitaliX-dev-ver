@@ -14,7 +14,7 @@
   }
 
   &__input {
-    padding: 20px 0 20px 30px;
+    padding: 20px 30px;
     border: 1px solid rgba(249, 131, 10, 0.4);
     border-radius: 12px;
 
@@ -102,6 +102,49 @@
     @include tablet880 {
       font-size: 16px;
     }
-    
+
   }
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-toggle {
+  width: 100%;
+  font-size: 20px;
+  color: var(--main-color-1);
+
+  background: var(--bg-color);
+
+  cursor: pointer;
+  text-align: left;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
 }
